@@ -13,6 +13,7 @@ Clona el repositorio:
 
 bash
 git clone <URL_del_repositorio>
+
 cd <nombre_del_repositorio>
 
 Asigna permisos de ejecución al script:
