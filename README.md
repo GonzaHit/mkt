@@ -26,7 +26,7 @@ Ejecuta el script con una dirección IP como argumento:
 
 bash
 
-mkt <IP>
+mkt <ip_victima>
 
 Estructura de Directorios
 
