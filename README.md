@@ -16,21 +16,30 @@ git clone <URL_del_repositorio>
 cd <nombre_del_repositorio>
 
 Asigna permisos de ejecución al script:
+
 bash
 chmod +x mkt
 
 Instalar en /usr/local/bin/
 
 Ejecuta el script con una dirección IP como argumento:
+
 bash
+
 mkt <IP>
 
 Estructura de Directorios
+
 El script crea la siguiente estructura de directorios:
 
 <nombre_del_proyecto>/
+
 ├── nmap/
+
 ├── content/
+
 ├── exploits/
+
 └── scripts/
+
 └── ip.txt (contiene la IP proporcionada)
