@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Verificar si se ingresaron los argumentos necesarios
+if [ -z "$1" ]; then
+  echo "Uso: $0 <IP>"
+  exit 1
+fi
+
+IP=$1
+
+# Nombre del proyecto basado en la fecha y la hora actuales
+PROYECTO=$(date +%Y%m%d%H%M%S)
+
+# Crear la estructura de directorios
+mkdir -p $PROYECTO/{nmap,content,exploits,scripts}
+
+# Crear archivo con la IP
+echo $IP > $PROYECTO/ip.txt
+
+echo "Directorios creados para el proyecto '$PROYECTO':"
+echo " - nmap"
+echo " - content"
+echo " - exploits"
+echo " - scripts"
+echo "Archivo 'ip.txt' creado con la IP: $IP"
+
